@@ -1,0 +1,27 @@
+:root {
+
+
+    // For Firefox/CSS Scrollbars
+    & {
+        scrollbar-color: $scrollbar-color $scrollbar-bg-color;
+    }
+}
+
+// For Google Chrome
+::-webkit-scrollbar {
+    width:  10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $scrollbar-color;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $scrollbar-bg-color;
+}
+
+::-webkit-scrollbar-corner {
+    background: rgba(0,0,0,0);
+  }

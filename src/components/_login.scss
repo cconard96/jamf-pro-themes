@@ -1,0 +1,27 @@
+body.login-page {
+	background-color: $body-bg-color;
+    color: $default-text-color;
+    
+    #login-wrapper {
+        background-color: $content-bg-color;
+
+        .login-box {
+            background-color: inherit;
+
+            @if($is-dark) {
+                #jamf-logo-login img {
+                    width: 152px;
+                    height: 83px;
+                    /** Push original image out of view using padding */
+                    padding-left: 152px;
+                    background: url(ui/images/svg/logos/jamf-pro-logo.svg) no-repeat;
+                    background-size: 152px 83px;
+                    box-sizing: border-box;
+                }
+            }
+            form.login-form input, form.login-form input:focus {
+                color: $default-text-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+#sidebar-logo, #topNav, #side-nav-tabs-actionsheet, jamf-panel[panel-id="main-sidebar-left"] .jamf-side-nav-background {
+	background: $outer-bg-color !important;
+}
+
+#side-nav-tabs-actionsheet #side-nav-tabs {
+    box-shadow: none;
+    li {
+        background: $outer-bg-color !important;
+        a {
+            background: transparent !important;
+        }
+    }
+}
+
+#sidebar-collapse {
+    background: transparent !important;
+}

@@ -1,0 +1,47 @@
+a {
+	color: $link-color;
+
+	&:hover {
+		color: $link-color-hover;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $default-text-color;
+	text-rendering: optimizeLegibility;
+}
+
+body, #main-ui-view-background {
+	background-color: $body-bg-color;
+	color: $default-text-color;
+}
+
+._pendo-badge input, ._pendo-badge input:focus, ._pendo-badge input:hover {
+	background-color: transparent;
+}
+
+jamf-splash {
+	background-color: $modal-bg-color;
+	.jamf-splash-content {
+		background-color: $modal-bg-color;
+		box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1),0 2px 0 0 #000000;
+	}
+}
+
+#main-grid-frame jp-breadcrumbs-container {
+	border-color: $text-color-faded !important;
+	background-color: $header-bg-color;
+	color: $default-text-color;
+
+	breadcrumb {
+		.breadcrumb-title {
+			color: $default-text-color;
+		}
+		.breadcrumb li span {
+			color: $link-color;
+			&:hover {
+				color: $link-color-hover;
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+@import '../dark.scss';
+
+$body-bg-color: #2f2f2f;
+$header-bg-color: #3f3f3f;
+$content-bg-color: #3f3f3f;
+$modal-bg-color: $body-bg-color;
+$modal-header-bg-color: $header-bg-color;
+$default-text-color: #ffffff;
+$text-color-faded: #888888;
+
+$outer-bg-color: #3b3b3b;
+$outer-text-color: $default-text-color;
+
+$scrollbar-bg-color: transparent;
+$scrollbar-color: #5f5f5f;
+
+$link-color: #4192ea;
+$link-color-hover: #9ccbff;
+
+$input-bg-color: #4e5a6f;
+$input-focus-bg-color: #363e4c;
+$input-text-color: $default-text-color;
+
+@import '../base.scss';

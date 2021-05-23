@@ -1,0 +1,81 @@
+.jamf-pro-dashboard {
+	#dashboard-container {
+		a.jamf-label {
+			color: $link-color;
+
+			&:hover {
+				color: $link-color-hover;
+			}
+		}
+		.dashboard-content {
+			&.widgets-exist {
+				background-image: none;
+				background-color: $body-bg-color;
+			}
+			#dashboard-header {
+				background-color: $body-bg-color;
+				color: $default-text-color;
+				@if ($is-dark) {
+					box-shadow: none;
+					h2 {
+						text-shadow: none !important;
+						color: $default-text-color !important;
+					}
+				}
+			}
+			.tile-series-widget {
+				h3 a {
+					color: $default-text-color;
+					&:hover {
+						color: $text-color-faded;
+					}
+				}
+			}
+			.container {
+				ul.grid-container li {
+					&>div, &>section, setup-task, jamf-patch-summary {
+						background-color: $content-bg-color;
+						border-color: $text-color-faded;
+					} 
+				}
+			}
+			a.dashboard-metric {
+				color: $link-color;
+
+				&:hover {
+					color: $link-color-hover;
+				}
+				& .metric-description, &:hover .metric-description {
+					color: inherit;
+				}
+			}
+		}
+	}
+}
+
+.jamf-patch-summary {
+	.jamf-inner-list {
+		thead {
+			background-color: $content-bg-color;
+		}
+		tbody tr {
+			&:nth-child(odd), &:nth-child(even) {
+				background-color: $content-bg-color;
+			}
+		}
+	}
+	.is-on-dashboard {
+		.jamf-inner-list::after {
+			background-color: $body-bg-color;
+		}
+	}
+}
+
+.status .jamf-pro-dashboard {
+	background-color: #2f2f2f;
+}
+
+.jamf-pro-dashboard .widgets-exist {
+	background-image: none;
+	background-color: $body-bg-color;
+}

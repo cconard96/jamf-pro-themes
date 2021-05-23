@@ -1,0 +1,55 @@
+input {
+	background-color: $input-bg-color;
+	color: $input-text-color;
+
+	&:focus {
+		background-color: $input-focus-bg-color;;
+		color: $input-text-color;
+	}
+
+	&[type="text"], &[type="password"], &[type="date"], &[type="datetime"], &[type="datetime-local"], &[type="month"], &[type="week"],
+	&[type="email"], &[type="number"], &[type="search"], &[type="tel"], &[type="time"], &[type="url"], &[type="color"] {
+		background: $input-bg-color;
+		color: $input-text-color;
+
+		&:hover {
+			background: $input-focus-bg-color;
+			color: $input-text-color;
+		}
+		&:focus {
+			background: $input-focus-bg-color;
+			color: $input-text-color;
+		}
+	}
+}
+
+textarea {
+	background: $input-bg-color;
+	color: $input-text-color;
+
+	&:hover {
+		background: $input-focus-bg-color;
+		color: $input-text-color;
+	}
+	&:focus {
+		background: $input-focus-bg-color;
+		color: $input-text-color;
+	}
+}
+
+select:hover {
+	background-color: unset;
+}
+
+input.disabled.jamf-input-text,
+.jamf-table-theme input.disabled.ag-filter-filter,
+input.jamf-input-text[disabled],
+.jamf-table-theme input.ag-filter-filter[disabled],
+input.jamf-input-text[disabled]:hover,
+.jamf-table-theme input.ag-filter-filter[disabled]:hover {
+	background-color: $input-bg-color;
+}
+
+input.jamf-input-text:focus,.jamf-table-theme input.ag-filter-filter:focus {
+	background: $input-focus-bg-color;
+}
