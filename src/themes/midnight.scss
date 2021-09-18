@@ -21,4 +21,11 @@ $input-bg-color: #4e5a6f;
 $input-focus-bg-color: #363e4c;
 $input-text-color: $default-text-color;
 
+$table-header-bg-color: #4e5a6f;
+$table-header-text-color: $default-text-color;
+$table-row-odd-bg-color: #3f3f3f;
+$table-row-odd-text-color: $default-text-color;
+$table-row-even-bg-color: #5f5f5f;
+$table-row-even-text-color: $default-text-color;
+
 @import '../base.scss';

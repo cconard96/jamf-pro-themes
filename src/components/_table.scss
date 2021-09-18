@@ -1,5 +1,29 @@
-.dataTables_wrapper {
-    .list-header {
-        background-color: $content-bg-color;
+.dataTables_wrapper .list-header, #table-top.list-header {
+    background-color: $content-bg-color;
+    .jamf-label, .title-label {
+        color: $default-text-color;
+    }
+}
+
+table.dataTable {
+    thead tr {
+        background-color: $table-header-bg-color !important;
+        color: $table-header-text-color;
+
+        .table-divider {
+            color: $table-header-text-color;
+        }
+    }
+    tr.odd {
+        background-color: $table-row-odd-bg-color !important;
+        td {
+            color: $table-row-odd-text-color !important;
+        }
+    }
+    tr.even {
+        background-color: $table-row-even-bg-color !important;
+        td {
+            color: $table-row-even-text-color !important;
+        }
     }
 }
